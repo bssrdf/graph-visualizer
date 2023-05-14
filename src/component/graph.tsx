@@ -22,6 +22,16 @@ function GraphElement({ inputString, graph, inputFormat, isDirected, setShowGrap
                 enabled: isDirected,
               }
             }
+          },
+          physics: {
+            // enabled: true,
+            repulsion: {
+              centralGravity: 0.2,
+              springLength: 200,
+              springConstant: 0.05,
+              nodeDistance: 100,
+              damping: 0.09
+            }
           }
         }}
         graph={graph}

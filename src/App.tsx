@@ -28,7 +28,7 @@ function App() {
       setShowGraph(true);
     } catch (err) {
       console.error(err)
-      console.error(err.message)
+      //console.error(err.message)
       setError("Enter a valid Array according to the format.");
     }
   }
